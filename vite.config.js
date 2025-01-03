@@ -1,8 +1,7 @@
-import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -13,15 +12,15 @@ export default defineConfig({
     }
   },
   server: {
-    host: '0.0.0.0',  // 모든 외부 IP에서 접속 가능하도록 설정
-    port: 5173,        // 원하는 포트로 설정 (기본값 3000)
-    strictPort: true,  // 포트 충돌 방지
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: true,
     hmr: {
-      host: 'localhost', // Hot Module Replacement(HMR) 설정
+      host: 'localhost',
     },
   },
-  base: 'https://dron512.github.io/greenart/', // 서브 디렉토리 설정
+  base: '/greenart/', // 서브 디렉토리 경로 설정
   build: {
-    outDir: 'docs', // 출력 디렉토리 설정
+    outDir: 'docs', // 빌드 출력 디렉토리
   },
-})
+});
