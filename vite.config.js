@@ -20,7 +20,7 @@ export default defineConfig({
       host: 'localhost', // Hot Module Replacement(HMR) 설정
     },
   },
-  base: 'http://dron512.github.io/greenart/', // 서브 디렉토리 설정
+  base: 'https://dron512.github.io/greenart/', // 서브 디렉토리 설정
   build: {
     outDir: 'docs', // 출력 디렉토리 설정
   },
