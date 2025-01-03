@@ -34,7 +34,7 @@ import TeacherDashBoard from '@/views/teacher/TeacherDashBoard.vue'
 import DeskDashBoard from '@/views/Desk/DeskDashBoard.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/greenart/'), // GitHub Pages 서브 디렉토리 경로
   routes: [
     // {
     //   path: '/',
